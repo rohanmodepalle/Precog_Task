@@ -23,6 +23,10 @@ The dependencies are:
 The approach I have taken is first gone through the data format and then try to come up with some basic analyses.
 Then I combined the data from 2010 and 2011 into one python variable and did the necessary pre-processing.
 
+Since the data set is very large, I have taken the data of the first 20000000 lines from the acts data and found whichever ones belong to the years 2010 and 2011 by mapping the ddl_case_id between the files.
+
+This generated around 1.5 million rows of data which I have used for my analysis.
+
 The classification problem I came up with is: run an ML model and check if the cases have been misclassified as criminal when based on the other parameters it should not have been the case.
 
 The ML models I have used are Bayesian Classifier, and KNN Classifier.
